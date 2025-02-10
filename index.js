@@ -18,6 +18,10 @@ const port = 3000;
 //
 //mysql://2AmqyA32V4RKAPc.root:qfkjuTq893VXpQZe@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/imi_his_db
 
+const { readFileSync } = require("fs");
+var path = require("path");
+let cer_part = path.join(process.cwd(), 'isrgrootx1.pem');
+
 
 const connection = mysql.createConnection({
     host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
@@ -26,7 +30,7 @@ const connection = mysql.createConnection({
     database: 'imi_his_db',
     port:4000,
     ssl:{
-      ca:fs.readFileSync('./isrgrootx1.pem')
+      ca:fs.readFileSync(cer_part)
     }
   });
 
