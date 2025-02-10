@@ -28,3 +28,8 @@ app.get('/', (req, res) => {
         ]
     });
 });
+app.get('/test',(req,res)=>{
+    res.json({
+        "TEST":"hello test"
+    })
+})
