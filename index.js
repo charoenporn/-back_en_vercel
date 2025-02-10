@@ -26,7 +26,7 @@ const connection = mysql.createConnection({
     database: 'imi_his_db',
     port:4000,
     ssl:{
-      ca:fs.readFileSync('isrgrootx1.pem')
+      ca:fs.readFileSync('./isrgrootx1.pem')
     }
   });
 
