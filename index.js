@@ -30,6 +30,8 @@ const connection = mysql.createConnection({
     }
   });
 
+  
+
 app.use(cors())
 app.use(express.json())
 app.listen(port, hostname, () => {
