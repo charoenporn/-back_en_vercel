@@ -26,7 +26,7 @@ let cer_part = path.join(process.cwd(), 'isrgrootx1.pem');
 const connection = mysql.createConnection({
     host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
     user: '2AmqyA32V4RKAPc.root',
-    password:"qfkjuTq893VXpQZe",
+    password:"5oyfEGAcDTs73GaG",
     database: 'imi_his_db',
     port:4000,
     ssl:{
